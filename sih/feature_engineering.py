@@ -181,6 +181,7 @@ class FeatureEngineeringMatrix:
                 "entity_id": entity_id,
                 "src_org": tx.src_enrichment.org,
                 "dst_org": tx.dst_enrichment.org,
+                "is_high_risk_network": int(tx.is_high_risk_network),
 
                 # Numerical ML Features
                 "amount": float(tx.amount),
